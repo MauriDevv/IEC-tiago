@@ -11,7 +11,7 @@ abstract class DAO extends PDO
     public function __construct()
     {
         // mysql:host=localhost:3307;dbname=biblioteca
-        $dsn = "mysql:host=" . $_ENV['db']['host'] . ";dbname=" 
+        $dsn = 'mysql:host=localhost:3307' . $_ENV['db']['host'] . ';dbname=minha_app'
              . $_ENV['db']['database'];
 
         if (self::$conexao == null) 
